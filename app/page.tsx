@@ -11,16 +11,15 @@ export default function Home() {
   const handleSendMessage = (e: React.FormEvent) => {
     e.preventDefault();
     if (!message.trim()) return;
-    // resto del código...
-  };
-  
 
+    // Agregar el mensaje del usuario a la conversación
     const userMessage = { sender: 'user', text: message };
     setConversation([...conversation, userMessage]);
 
-    // Simulamos la respuesta de la IA (puedes integrar una API aquí)
+    // Simulamos la respuesta de la IA
     const aiResponse = { sender: 'IA', text: 'Respuesta de la IA...' };
-    setConversation([...conversation, userMessage, aiResponse]);
+    setConversation((prevConversation) => [...prevConversation, userMessage, aiResponse]);
+
     setMessage('');  // Limpiar el input después de enviar el mensaje
   };
 

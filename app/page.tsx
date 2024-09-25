@@ -2,11 +2,16 @@
 
 import { useState } from 'react';
 import Image from 'next/image';  // Usamos Next.js Image para manejar las imágenes
-import './globals.css';  // Ajusta esta ruta según la ubicación real de globals.css
+import '../globals.css';  // Ajusta esta ruta según la ubicación real de globals.css
+
+interface Message {
+  sender: string;
+  text: string;
+}
 
 export default function Home() {
   const [message, setMessage] = useState('');
-  const [conversation, setConversation] = useState([]);
+  const [conversation, setConversation] = useState<Message[]>([]);
 
   const handleSendMessage = (e: React.FormEvent) => {
     e.preventDefault();

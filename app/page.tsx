@@ -8,9 +8,12 @@ export default function Home() {
   const [message, setMessage] = useState('');
   const [conversation, setConversation] = useState([]);
 
-  const handleSendMessage = (e) => {
+  const handleSendMessage = (e: React.FormEvent) => {
     e.preventDefault();
-    if (!message.trim()) return;  // Evitar mensajes vacíos
+    if (!message.trim()) return;
+    // resto del código...
+  };
+  
 
     const userMessage = { sender: 'user', text: message };
     setConversation([...conversation, userMessage]);

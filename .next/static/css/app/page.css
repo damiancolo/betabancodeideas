@@ -1,0 +1,79 @@
+/*!*************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[3]!./app/globals.css ***!
+  \*************************************************************************************************************************************************************************************************************************************************************/
+/* globals.css */
+
+/* Estilos globales */
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background-color: #f4ecd8; /* Tono sepia suave */
+  color: #4b3f2f; /* Color de texto marrón suave */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+}
+
+/* Estilo de los títulos */
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #3f3127; /* Tono marrón oscuro */
+}
+
+/* Estilos del formulario */
+form {
+  background-color: #fff6e5; /* Fondo cálido */
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  width: 100%;
+  max-width: 600px;
+}
+
+/* Estilo del textarea */
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background-color: #faf3e6; /* Fondo cálido */
+  color: #4b3f2f;
+  font-size: 1.1rem;
+  outline: none;
+  resize: vertical;
+}
+
+/* Estilo del placeholder */
+textarea::placeholder {
+  color: #a29280;
+}
+
+/* Estilo del botón */
+button {
+  background-color: #c8a165;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 15px;
+}
+
+/* Efecto hover en el botón */
+button:hover {
+  background-color: #b0894f;
+}
+
+/* Estilo de los párrafos */
+p {
+  font-size: 1.2rem;
+  color: #3f3127;
+  margin-top: 15px;
+}
+

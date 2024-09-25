@@ -5,7 +5,13 @@ import { useState } from 'react';
 
 export default function Chat() {
   const [message, setMessage] = useState('');
-  const [conversation, setConversation] = useState([]);
+  interface Message {
+    sender: string;
+    text: string;
+  }
+  
+  const [conversation, setConversation] = useState<Message[]>([]);
+  
 
   const sendMessage = async (e: React.FormEvent) => {
     e.preventDefault();

@@ -5,7 +5,8 @@ import { useState, useEffect } from 'react';
 import '../globals.css'; // Enlace a los estilos globales
 
 export default function Ideas() {
-  const [ideas, setIdeas] = useState([]);
+  const [ideas, setIdeas] = useState<string[]>([]);
+
 
   useEffect(() => {
     const fetchedIdeas = [

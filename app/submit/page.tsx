@@ -7,7 +7,7 @@ export default function SubmitIdea() {
   const [idea, setIdea] = useState('');
   const [submitted, setSubmitted] = useState(false);
 
-  const handleSubmit = async (e) => {
+  const const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
     const response = await fetch('/api/submit', {

@@ -7,7 +7,7 @@ export default function Chat() {
   const [message, setMessage] = useState('');
   const [conversation, setConversation] = useState([]);
 
-  const sendMessage = async (e) => {
+  const sendMessage = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!message.trim()) return;
 

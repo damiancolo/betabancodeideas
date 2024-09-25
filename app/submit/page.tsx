@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from 'react';
-import './globals.css'; // Enlazar los estilos globales
+import '../globals.css'; // Enlazar los estilos globales
 
 export default function SubmitIdea() {
   const [idea, setIdea] = useState('');

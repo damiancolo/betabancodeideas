@@ -32,7 +32,7 @@ export default function SubmitIdea() {
           value={idea}
           onChange={(e) => setIdea(e.target.value)}
           placeholder="Escribe tu idea aquí..."
-          rows="5"
+          rows={5}
         ></textarea>
         <button type="submit">Enviar</button>
       </form>
